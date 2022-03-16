@@ -1,0 +1,34 @@
+Access Modifiers:
+Access modifiers allow us to control the visibility of class members(fields, methods, constructors, etc.)
+and classes, themselves, in Java.
+
+There are 4 access levels and there are 3 keywords that we use to define these access levels.
+4th level is applied when we don't use any access modifier keyword.
+
+Levels from most-restricted to least-restricted:        !!!!!!!!!
+Private, Default, Protected, Public.
+
+Rules:
+-We should always prefer private access modifier for the FIELDS, because fields contain the data,
+and the methods of your class might use that data to preform some tasks. If we don't preform sanity checks
+before setting the values of these fields, our classes and methods might misbehave. Also, the access of data
+should be Restricted, so that not everyone can access the data.
+-We can't use access modifiers with LOCAL variables.
+
+Most of the time, the FIELDS are aet to Private, and the METHODS are set to Public.
+
+==============================================================================================================
+Constructors:
+Constructors in java allow us to set the values of the fields of a class.
+
+the "this" keyword ALWAYS refers to the INSTANCE variable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Constructors will MOSTLY be public, and if not public, then default.
+
+Main purpose of constructors is to initialize the fields of a class
+
+Constructor chaining --> calling 1 constructor into another constructor
+the 'Outer' constrictor must have parameters that are used with the 'Inner' constructor(s)
+the 'inner' constructor is executed firs, and then the rest of the code in the 'outer' constructor is executed
+Syntax:
+this(parameters of 'inner' constructor);

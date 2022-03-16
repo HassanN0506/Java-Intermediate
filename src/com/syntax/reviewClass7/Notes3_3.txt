@@ -1,0 +1,11 @@
+1. definition, 2. explanation, 3. implementation, 4. execution
+
+
+Class: blueprint/template/place to store all the things used for 1 specific thing
+
+Object: takes care of State and Behavior of ONE Instance of a class
+
+State: Variables/Functions/Fields
+
+Behavior: Methods
+

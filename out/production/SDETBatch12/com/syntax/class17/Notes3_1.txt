@@ -1,0 +1,62 @@
+Types of variables:
+
+2 categories of data types: primitive and non-primitive
+8 primitive data types: boolean, byte, short, int, double, long, float, char
+
+There are 3 types of variables: local, instance, and static
+LOCAL variables are inside a method
+INSTANCE variables are inside a class BUT NOT inside a  method
+STATIC variables are instance variable, but they have STATIC keyword in front of them
+
+example:
+class Vars{
+
+int age=24; // INSTANCE VARIABLE
+static double weight=225; //STATIC VARIABLE
+
+    void method(){
+        String name = "Hassan"; //LOCAL VARIABLE
+    }
+}
+
+Local variable:
+If a variable is defined inside a method or loop or switch or any other block of code,
+it is called a LOCAL VARIABLE.
+Do not get a default value!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Instance variable:
+If a variable is not declare inside a method, but it is inside a class,
+then it is called an INSTANCE VARIABLE.
+cannot be re-initialized (change the value later on in a further line of code) inside the class.
+That has to be done inside a method!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Static variable (AKA 'class variables'):
+If a variable is not declare inside a method, but it is inside a class, AND IT STARTS WITH THE
+'STATIC' KEYWORD, then it is called a static variable.
+If you change this in further code in the Main method, it will change it for ALL the objects in the class it was created in
+(and change the printout of the previous lines' of code) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+----------
+
+When to use which type of variable?
+
+Local:
+ALWAYS preferred over instance and static variables (whenever applicable).
+Why? because they occupy the computers' memory for a very, very short amount of time.
+As soon as their purpose is served, Java destroys them (and then recreates them whenever needed).
+Pros: Save memory
+Cons: not accessible outside the method/block of code
+//LOCAL VARIABLES CANNOT BE STATIC
+
+Instance:
+Used when we want to share something in multiple methods of a class,
+AND the information is expected to be different from object to object.
+Pros: Accessible in all the methods of a class
+Cons: Occupy the computers' memory for longer than Local variable, slowing execution time
+
+Static:
+When we know the information will stay the same for all the objects of the class.
+Same as instance, but the information IS NOT expected to differ from object to object.
+Pros: Single memory location for all the object of a clas (takes up less memory space)
+Cons: Stay for longer in the memory, and can only hold 1 value at a time.
+//CANNOT BE LOCAL!!!!

@@ -1,0 +1,42 @@
+Access modifiers:
+
+Access modifiers are keywords in java that defines from where
+a certain variable, method or a class  etc. can be accessed.
+
+There are 4 types of access in java that we can define using keywords.
+1. Private
+2. Protected
+3. Public
+
+and Default (NOT a keyword, this is used when we don't specify)
+default behaves different from mentioned keyword access modifiers.
+
+Private access: When we use the "private" keyword with any of the variables,
+methods, or classes, etc. these can ONLY be accessed within that class.
+
+Default access is applied when we don't use any keyword.
+Applied automatically by Java to those variables, methods, or classes, etc.
+Which means these things can ONLY be accessed from the SAME PACKAGE.
+
+Protected access(we use the 'protected class'). When the protected access is applies,
+the CLASS MEMBERS (variables, objects, classes, etc.) can be accessed from other packages,
+BUT ONLY in the classes that participate in inheritance.
+
+Public access means class members and classes can be accessed from ANYWHERE inside that project.
+
+
+Accessing a field DIRECTLY
+ex:     System.out.println(account.accountNumber);
+is different from accessing the SAME FIELD with a Method having a DIFFERENT Access Modifier
+ex:     Account obj=new Account();
+        ojb.printAccountNumber();
+THE METHOD'S ACCESS IS WHAT IS CHECKED, NOT THE VARIABLES THAT ARE INSIDE OF THE METHOD
+so if the variable is private, but the method is public, we can call it using the method.
+
+
+STATIC METHODS can access other static methods and fields without needing an object of that class or
+the class name, if they are in side the same class.
+
+
+small to big: Private, Default, Public.
+visible in:   Class,   Package, Everywhere.
