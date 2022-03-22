@@ -1,0 +1,28 @@
+instance variables are declared inside a class, but outside any method, constructor, or block of code
+
+Is it good practice to: make a method static if it only utilizes static members, because it takes less memory?
+can static methods have local variables inside them???? they're technically non-static....
+
+
+we can have multiple constructors by simply OVERLOADING them
+
+this() is ALWAYS AND ONLY a reference to the constructor. If you've created your own constructor, the
+default constructor is gone, therefor you have to ALSO create a NON-Parameterized constrictor in order to use "this();",
+Otherwise, you would have to refer to the constructor you created by putting parameters inside it like this:
+"this(argument, argument);"
+
+CONSTRUCTORS CAN HAVE ACCESS MODIFIERS
+
+
+We MUST specify a dataTYpe and a name when creating a Variable
+We MUST specify a returnType and a name when creating a Method
+*NON-access modifiers (like final and static) are Optional for both.
+*access modifiers are Optional for both
+
+Syntax:
+    accessModifier Non-accessModifier returnType/dataType name (parenthesisForMethods);
+
+
+Access modifiers from Most restrictive to Least restrictive:
+private -> default -> protected -> public
+
