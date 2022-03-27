@@ -1,0 +1,44 @@
+Collections framework in Java:
+-collection of classes that help us manage and manipulate data in a better way.
+-only support CLASSES (NOT dataTypes, hence why Wrapper classes, through "boxing")
+
+
+1) ArrayList
+-this class has many built-in methods like add, remove, clear, etc.
+-they are dynamic and can adjust their size at runtime
+
+ArrayList<Integer> arrayList = new ArrayList();
+- ArrayList => name of class
+- <> => diamond operator, CLASS GOES HERE
+
+
+Wrapper classES:
+byte => Byte
+short => Short
+int => Integer
+double => Double
+char => Character
+
+Why wrapper classes?
+-we get built-in methods
+-a lot of the "FRAMEWORKS" don't support primitives
+
+When to use primitives?
+-we SHOULD use primitives when we care about the memory,
+because primitives occupy 4x less memory as compared to wrappers
+
+When to use Wrapper?
+-when we care about our ease
+
+
+-Converting from primitive to wrapper = Boxing
+-Converting from wrapper to primitive = Unboxing
+
+
+LinkedList is like ArrayList, but it uses pointers to get specific elements.....
+
+-ArrayList is preferred when you need to access the data often, and it will not change.
+-LinkedList is preferred when you need to change it, and aren't going to access it often.
+
+
+-Lists can contain duplicate elements

@@ -1,0 +1,30 @@
+package com.syntax.class27;
+
+import java.util.ArrayList;
+
+public class ArrayListDemo5 {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> groceries=new ArrayList<>();
+        groceries.add("Apple");
+        groceries.add("Orange");
+        groceries.add("Banana");
+        groceries.add("Potato");
+        groceries.add("Onion");
+        groceries.add("Carrot");
+
+        System.out.println(groceries);
+
+
+        ArrayList<String> itemsToBeRemoved = new ArrayList<>();
+        itemsToBeRemoved.add("Apple");
+        itemsToBeRemoved.add("Onion");
+
+        groceries.removeAll(itemsToBeRemoved);
+        //removes all the elements in this list from that list
+
+        System.out.println(groceries);
+
+    }
+}
