@@ -2,7 +2,7 @@ package com.syntax.class16;
 
 public class Homework {
 
-        //for Task4
+        //for Task4.java
         String reverseString(String inputString){
             //converting a String to StringBuilder to that we can use the reverse method:
             StringBuilder sB = new StringBuilder(inputString);

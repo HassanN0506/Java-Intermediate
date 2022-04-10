@@ -35,7 +35,7 @@ When to use Wrapper?
 -Converting from wrapper to primitive = Unboxing
 
 
-LinkedList is like ArrayList, but it uses pointers to get specific elements.....
+LinkedList is like ArrayList, but it uses pointers to get specific elements.
 
 -ArrayList is preferred when you need to access the data often, and it will not change.
 -LinkedList is preferred when you need to change it, and aren't going to access it often.

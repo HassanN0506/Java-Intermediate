@@ -16,7 +16,7 @@ public class ArrayListDemo4 {
         vegetables.add("Onion");
         vegetables.add("Carrot");
 
-        ArrayList<String> groceries = new ArrayList<>();
+        ArrayList<String> groceries=new ArrayList<>();
         groceries.addAll(fruits);
         groceries.addAll(vegetables);
         //addAll() method Adds an entire list inside another list

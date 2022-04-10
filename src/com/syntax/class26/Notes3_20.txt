@@ -1,7 +1,7 @@
 Abstraction in Java:
     -Hiding the implementation details and providing the functionality
 
-2 methods to achieve abstraction:
+2 ways to achieve abstraction:
     1. abstract class
     2. interface
 
@@ -31,7 +31,7 @@ Encapsulation:
     -The 4th pillar of OOPs.
     -It provides better security and better control over the data of a class.
 
-We create classes, and inside those classes, we create private fields and methods
-    -These methods are called getter setter methods
-    -We set and get the value sof the class fields w/ the help of these methods
+We create classes, and inside those classes, we create private fields and public methods
+    -These methods are called getter & setter methods
+    -We set and get the values of the private class fields w/ the help of these public methods
      (instead of accessing and modifying them directly)

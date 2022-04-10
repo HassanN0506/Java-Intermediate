@@ -29,12 +29,16 @@ public class CollectionsDemo2 {
 
         System.out.println(countries.size());
         //to get the size of this array list
-        //size() method is dynamic
+        //size() method is dynamic (meaning it functions at runtime, not compile-time)
 
 
         countries.remove("Pakistan");
         System.out.println(countries);
-        //removes the specified element (specified by its value, not its index)
+        //removes the specified element (specified by the 'object', which is the value of the element)
+
+        //remove method is overloaded so that you can specif the OBJECT, or the INDEX
+        countries.remove(0);
+        System.out.println(countries);
 
 
         countries.clear();

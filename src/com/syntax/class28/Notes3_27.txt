@@ -1,0 +1,83 @@
+LAMBDA Expressions:
+-As we can pass a variable to a method; We can pass the body of a method to another method,
+    with the help of lambda expressions.
+
+-ForEach loop does NOT change its size dynamically!!!!!
+
+-You can only use an iterator to iterate through something 1 time, but if you need to use an iteration's
+value multiple times, you can set a dataType = itr.next(); and use dataType for all of your operations.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Wrapper classes:
+-they are the "object types" for all the primitive data types.
+-primitive data types are not classes, so the wrapper classes are built to be the
+    primitive data types, but as classes.
+-when we use wrapper classes, we get all the benefits of classes and objects;
+    for example we can have built-in methods.
+    -Also, generics works only with classes!!!!!
+
+So, why do we have wrapper classes?
+-because Collections framework does not support primitive data types
+
+Boxing in Wrapper classes:
+-boxing happens when we convert a primitive data type to an object of a corresponding Wrapper type.
+
+//boxing is primitive to wrapper object:
+    int num1=10;
+    Integer num2=new Integer(num1);
+
+//unboxing is converting an object of a wrapper class to a corresponding primitive data type
+    Integer num1=new Integer(10);
+    int num2=num1.intValue();               !!!!!
+
+Shortcut to create a wrapper type:
+Integer num=10; //autoBoxing
+int num2=num; //and this is autoUNboxing
+
+=============================================================================
+
+Lists:
+-List is an interface in Collections framework, which is implemented by 2 classes:
+    the ArrayList class, and the LinkedList class.
+
+-We can store DUPLICATE values in lists
+-Insertion order is maintained in lists
+
+When to use ArrayList:
+-if most of the operations are reading and storing new data, and not shifting or changing
+    the position of data, then we should go with ArrayList.
+
+When to use LinkedList:
+-When most of the operations are related to changing the position of data, or related to
+    data shifting, then we should go with LinkedList.
+
+=============================================================================
+
+-all loops have problems with lists, so they're not recommended.
+    (because lists are designed to be changed in size, which trips up the loop's iterator)
+    -loops can be used in certain one-time instances, when the size of the list isn't being changed
+-instead, use an object of Iterator Interface
+
+-iterators can't go back
+-iterators have 3 built in methods: .next(), .hasNext(), and .remove()
+
+-When you are  doing any operations on a list that change its size, use iterator.
+    Otherwise, you can use loops.
+
+==============================================================================
+
+-You have to override the toString method inside the class you want to print the variables of the
+    object of that class, and then just sout(nameOfObject)
+
+=============================================================================
+
+-sets only store unique values for each element (no duplicates).
+    -when you insert a duplicate element to into a set, the old value is overwritten.
+
+-sets DO NOT maintain the insertion order.
+
+-HashSet and LinkedHashSet allow null values, but TreeSet des NOT allow null values.
+
+-Sets do NOT store data based on index !!!!!
+

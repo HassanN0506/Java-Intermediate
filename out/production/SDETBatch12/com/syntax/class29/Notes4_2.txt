@@ -1,0 +1,55 @@
+-Whenever we do an operation that can change the size of a collection, we should always go with
+Iterator instead of loop!!!!!
+
+-"insertion order" is the order in which things were added in it!!!!!
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Set in java:
+Set is an interface in collections framework which is implemented by many classes.
+    For example: HashSet, LinkedHashSet, and TreeSet.
+
+Properties of Set:
+-Sets do NOT allow duplicates.
+
+HashSet:
+-HashSet does not maintain the insertion order (the order in which things were added in it).
+-It is the fastest in all Sets.
+-Most widely used Set.
+
+LinkedHashSet:
+-Maintains the insertion order
+-Slower than HashSet, but faster than TreeSet, especially the insertions.
+
+TreeSet:
+-Sorts the data in natural ascending order (in increasing order for letters and numbers).
+-it is the slowest when it comes to store the data.
+
+When to use which type of Set:
+1) If we don't care about the insertion order or the data being sorted, always use HashSet
+2) If we need the insertion order, we don't have much choice, we must use the linkedHashSet
+3) But if we don't care about just the insertion order, we can compare it with TreeSet
+
+LinkedHashSet                vs                 TreeSet:
+-Insertion is not slow                          -The slowest insertion
+-Retrieval is super, super slow                 -Retrieval is slower than HashSet,
+                                                    but faster than LikedHashSet
+
+When to use which set:
+-If I don't care about insertion order, but I care about retrieval speed, which Set should I use?
+    HashSet
+
+-If I care about insertion order, but I don't care about retrieval speed, which Set should I use?
+    LinkedHashSet
+
+-If I want to have sorted data all the time?
+    TreeSet
+
+=========================================================================================================================
+
+Maps in Java:
+
+-Map is NOT a 'collection'
+-Maps' key is just a customizable index.
+-Maps are faster than arrays and collections.
+

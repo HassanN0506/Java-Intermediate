@@ -17,8 +17,8 @@ public class Task1 {
         names.add("John");
         names.add("Jacob");
         names.add("Jingle");
-        names.add("Hiemer");
-        names.add("Schmidt");
+        names.add("Heimer");
+        names.add("Smith");
 
         System.out.println(names.isEmpty());
 

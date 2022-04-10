@@ -1,0 +1,48 @@
+
+Do NOT use the Arrays.AsList() method to add elements to a list,
+because it wastes AT LEAST twice as much memory (bc you're really creating 2 lists).
+Instead, always add elements to a list the long way around.
+
+==========================================================================================================================
+
+AUTO-CASTING DOES NOT HAPPEN IN COLLECTIONS OR IN MAPS!!!!!
+    (must be done explicitly)
+
+Maps in Java:
+-Map is an interface that allows us to store the data in key & value pairs.
+
+Benefits:
+-We can store 2 elements inside each entry of the map
+-Searching is very efficient in maps
+
+Types of maps:
+-HashMap
+-LinkedHashMap
+-TreeMap
+-HashTable
+
+HashMap:
+-Does NOT maintain insertion order (downside)
+-Insertion speed and Retrieval speed is the fastest (upside)
+
+LinkedHashMap:
+-DOES maintain insertion order (upside)
+-Insertion speed is SAME AS HashMap, but Retrieval speed is the slowest (downside)
+
+TreeMap:
+-Organized entries in ascending order of keys (upside)
+-Insertion speed is slowest (downside)
+-Retrieval speed is medium (faster than LinkedHasMap, but slower thanHashMap)
+
+Rules:
+-Maps do NOT belong to the Collections framework.
+    Therefor, we CANNOT convert a Map to a collection or vice versa.
+
+ex.     Map<String, String> students=new Map<>();
+        students.put("Yaz123", "Yazgul");
+        Set<String> set=new HashSet(students);
+        //ERROR, because java cannot decide which element is a key and which is a key.
+
+-Duplicate Keys are NOT allowed
+-Duplicate Values ARE allowed
+

@@ -20,7 +20,7 @@ public class ArrayListDemo7 {
         arrayList.add(40);
         arrayList.add(50);
         arrayList.add(1, 100);
-        //computer does a lot of work to change an array
+        //computer does a lot of work to change an arrayList
 
 
         //computer has an easier time changing a linked list
