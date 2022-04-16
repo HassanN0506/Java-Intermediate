@@ -55,6 +55,5 @@ public class MapDemo2 {
         but insertion order will get changed in LinkedHashMap if we do this
          */
 
-
     }
 }

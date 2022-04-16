@@ -6,12 +6,12 @@ import java.util.Set;
 
 public class MapDemo3 {
     public static void main(String[] args) {
-        HashMap<String,Double> fruitMap=new HashMap<>();
-        fruitMap.put("Apple",20.0);
-        fruitMap.put("Banana",10.2);
-        fruitMap.put("Orange",16.5);
-        fruitMap.put("Mango",10.2);
-        fruitMap.put("Kiwi",105.2);
+        HashMap<String, Double> fruitMap = new HashMap<>();
+        fruitMap.put("Apple", 20.0);
+        fruitMap.put("Banana", 10.2);
+        fruitMap.put("Orange", 16.5);
+        fruitMap.put("Mango", 10.2);
+        fruitMap.put("Kiwi", 105.2);
 
         /*
         if we change the size of the map while looping through a map,
@@ -35,8 +35,8 @@ public class MapDemo3 {
         //I want to remove all the elements from my map that have the letter 'e'
         System.out.println(fruitMap);
 
-        while(iterator.hasNext()){
-            if(iterator.next().toLowerCase().contains("e"))
+        while (iterator.hasNext()) {
+            if (iterator.next().toLowerCase().contains("e"))
                 iterator.remove();
         }
 
@@ -59,7 +59,6 @@ public class MapDemo3 {
         It still refers to the set of key values,
         so to use a LAMBDA expression, we must still FIRST create that set of key values.
          */
-
 
     }
 }
