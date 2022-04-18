@@ -1,0 +1,11 @@
+Method overriding in Java:
+
+-Method overriding happens when we have the same signatures (the method name and parameters)
+    in a parent class and in a child class.
+
+Benefits:
+1) Flexibility: With the help of method overriding, child classes can provide their own implementations
+    for methods that are present in the parent class.
+2) Polymorphism: The same method can behave differently depending on the object it's called on.
+
+Rules:
