@@ -1,7 +1,6 @@
 package com.syntax.class30;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 /*
@@ -19,34 +18,15 @@ public class Task5 {
         employeeSalaries.put("Jane", 70000.0);
         employeeSalaries.put("Emily", 100000.0);
 
-        double highest = 0.0;
+        double salary = 0.0;
         String name = null;
         for (Map.Entry<String, Double> entry : employeeSalaries.entrySet()) {
-            double salary = entry.getValue();
-            if (salary > highest) {
-                highest = salary;
-            }
-            if(highest==entry.getValue()){
-                name=entry.getKey();
+            if (entry.getValue() > salary) {
+                salary = entry.getValue();
+                name = entry.getKey();
             }
         }
 
-        System.out.println(name+"=$"+highest);
+        System.out.println(name+" = $"+salary);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

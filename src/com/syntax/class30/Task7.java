@@ -16,7 +16,7 @@ public class Task7 {
         int sum=0;
         for (int a:numbers
              ) {
-            sum=sum+a;
+            sum+=a;
         }
         System.out.println(sum);
     }

@@ -12,10 +12,10 @@ public class Task6 {
         strings.add("Hello");
         strings.add("World");
 
-        String all = "";
+        StringBuilder all = new StringBuilder();
         for (String string:strings
              ) {
-            all=all+" "+string;
+            all.append(" ").append(string);
         }
 
         System.out.println(all);

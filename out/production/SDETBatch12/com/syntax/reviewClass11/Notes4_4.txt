@@ -9,3 +9,30 @@ Benefits:
 2) Polymorphism: The same method can behave differently depending on the object it's called on.
 
 Rules:
+1) There must be parent-child relationship between the classes.
+2) The method we are trying to override must be present in side the child class with the same method signature.
+3) If something doesn't participate in inheritance, we cannot override it.
+    -for example, Private methods and fields, and Constructors.
+4) If a method is declared Final inside the parent class, it cannot be overridden (but it can be overloaded).
+5) We can't override the Static methods, but we can "Re-Declare" them (and overload them).
+    -for example, the main method.
+6) The access level cannot be changed to be more restrictive when a method is overridden.
+7) The return type should be the same.
+
+
+Method overLoading                    vs                   Method overRiding
+-signature should be Different.                            -signature should be the Same.
+-return type can be Different.                             -return type should be the Same.
+-we don't care about the access modifiers.                 -access modifiers CAN'T be more restrictive.
+-we don't care about the non-access modifiers.             -we DO care about the non-access modifiers
+    (final, static, abstract, etc.)
+-we can overload constructors                              -we CAN'T override constructors
+-"early binding"/"compile-time polymorphism"/              -"late binding"/"run-time polymorphism"/
+    "static polymorphism"                                     "dynamic polymorphism"
+
+
+Polymorphism:
+-Polymorphism happens when something behaves different depending on the situation.
+    -for example: a method can behave differently when we pass different parameters
+    or when we call the method using different objects.
+

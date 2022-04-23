@@ -20,14 +20,19 @@ Rules:
 7) The return type should be the same.
 
 
-Method overLoading                    vs                  Method overRiding
--signature should be Different.                           -signature should be the Same.
--return type can be Different.                            -return type should be the Same.
--we don't care about the access modifiers.                -access modifiers CAN'T be more restrictive.
--we don't care about the non-access modifiers.            -we DO care about the non-access modifiers
+Method overLoading                    vs                   Method overRiding
+-signature should be Different.                            -signature should be the Same.
+-return type can be Different.                             -return type should be the Same.
+-we don't care about the access modifiers.                 -access modifiers CAN'T be more restrictive.
+-we don't care about the non-access modifiers.             -we DO care about the non-access modifiers
     (final, static, abstract, etc.)
--we can overload constructors                             -we CAN'T override constructors
--"early binding"/"compile-time polymorphism"/             -"late binding"/"run-time polymorphism"/
-    "static polymorphism"                                    "dynamic polymorphism"
+-we can overload constructors                              -we CAN'T override constructors
+-"early binding"/"compile-time polymorphism"/              -"late binding"/"run-time polymorphism"/
+    "static polymorphism"                                     "dynamic polymorphism"
+
 
 Polymorphism:
+-Polymorphism happens when something behaves different depending on the situation.
+    -for example: a method can behave differently when we pass different parameters
+    or when we call the method using different objects.
+
