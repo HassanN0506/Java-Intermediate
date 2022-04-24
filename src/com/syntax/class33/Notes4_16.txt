@@ -1,0 +1,8 @@
+Exceptions in Java:
+-An unwanted behavior that disrupts the normal flow of execution.
+
+
+-Once we enter a tryCatch, NO MATTER WHAT HAPPENS, the Finally will ALWAYS be executed.
+
+
+-runtime exception is not mandatory to specify the throws in the method header
